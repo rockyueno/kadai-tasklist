@@ -11,10 +11,7 @@
 |
 */
 
-//Route::get('/', 'TasksController@index');
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksController@index');
 
 // ユーザ登録
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
